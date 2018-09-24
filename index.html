@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cairo:400" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<title>Házi weboldal</title>
+	<style>
+        html, body { width: 100%; margin: 0; padding: 0}
+        * {box-sizing: border-box}
+        body > nav { background-color: whitesmoke; height: 10vh; border-bottom: 1px solid #ccc;}
+        nav img {height: 100%;width: 20%; float: left}
+        body > nav ul {background-color: whitesmoke; width: 80%;margin: 0; padding: 0; list-style-type: none; height: 100%;float: right;}
+        body > nav ul li {float: right;line-height: 25px;}
+        body > nav ul li a {text-decoration: none; display: block; padding: 0 20px; color: black; line-height: 45px;font-family: 'Open Sans', sans-serif;}
+        body > nav ul li a:hover {color:red}
+        .hamburger {display: none}
+        
+        .slide {height: 60vh;background-image: url(pexels-photo.jpg); background-size: cover; background-position: center;display: flex; align-items: center; justify-content:center}
+        .masodik {background-image: url(pexels-photo-853168.jpeg);}
+        .harmadik {background-image: url(pexels-photo-209652.jpeg);}
+        .negyedik {background-image: url(crowd-diversity-ground-450059.jpg);}
+        .w3-button {background-color: #ff3300;color: white}
+        
+        .kepre h2 {margin-top: 0; font-family: 'Titillium Web', sans-serif;text-transform: uppercase; font-weight: 200; letter-spacing: 3px; font-size: 40px}
+        .kepre {text-align:center; color: white; width: 75%;font-family: 'Open Sans', sans-serif;font-weight: 200}
+        .kepre button {width: 25%; background-color: rgb(255, 255, 255, 0.2); filter: alpha(opacity=20); border: 1px solid white;padding: 6px; }
+        .kepre button a {text-decoration: none;font-family: 'Titillium Web', sans-serif;text-transform: uppercase; font-weight: bold;color:white; font-size: 20px;}
+        
+        .preface {height: auto; min-height: 30vh; background-color: #ff3300;display: flex; justify-content: space-around}
+        .preface div h3, .preface div p {margin-top: 0;}
+        .preface div {width: 30%; text-align: center; color: white; display: flex; flex-direction: column;justify-content: center; font-family: 'Open Sans', sans-serif; font-weight: 200}
+        .preface h3 {font-size: 25px; }
+        
+        main {display: flex; justify-content: space-around; font-family: 'Cairo', sans-serif;}
+        .tartalom {width: 50%;}
+        .tartalom h2 {font-size: 35px; margin: 0}
+        .tartalom h3 {margin: 0}
+        .tartalom button {background-color: #ccc; border-radius: 3px; border: none; padding: 5px; cursor: pointer}
+        article {padding-bottom: 15px;}
+        article:last-child {margin-bottom: 30px}
+        
+        aside {width: 30%}
+        aside span {color: red}
+        aside button {margin-top: 25px;height: 45px; color: white; border: 0; border-radius: 5px; background-color: #6699ff}
+        aside button:hover {cursor: pointer}
+        aside button:last-child {background-color: #4d4d4d}
+        .paypal {width: 30%; padding: 0; border-radius: 50px; background-color: white}
+        .paypal img {width: 100%; height: auto; padding: 0}
+        
+        .cikk img {float: left;width: 40%; height: auto; border: 1px solid #ccc; padding: 5px; margin-right: 15px;}
+        .cikk span {background-color: #ff3300; color: white; padding: 0 3px;border-radius: 3px; margin-right: 5px}
+        article {border-bottom: 1px solid #ccc}
+        
+        footer {display: flex; justify-content: space-around; background-color: #4d4d4d; color: white; height: auto; min-height: 30vh; border-top: 3px solid #ff3300; font-family: 'Open Sans', sans-serif;}
+        .bottom {width: 20%}
+        .bottom h3{text-transform: uppercase; font-weight: 500}
+        .bottom p {font-weight: 200}
+        .lablec {width: 100%; height: 5vh; background-color: #1a1a1a; color: white; padding-top: 10px; padding-left: 10px;font-family: 'Open Sans', sans-serif;font-weight: 300}
+        
+        /*media query*/
+        
+        @media (max-width: 800px){
+            body nav ul {display: none}
+            .hamburger {display: inline; float: right; height:inherit; font-family: 'Open Sans', sans-serif;font-size: 25px; padding-top: 25px}
+            div.kepre {width: 95%}  
+            nav img {width: 50%}
+            .paypal {width: 50%}
+        }
+        @media (max-width: 600px) {
+            .kepre button {width: 80%;}
+            .preface {display: block}
+            .preface div {width: 95%}
+             main {display: block}
+             aside {width: 95%; margin: 0 auto 10px auto}
+            .tartalom {width: 95%; margin: 0 auto}
+            footer { display: block}
+            .bottom {width: 95%; margin: 0 auto; padding-bottom: 10px}
+            .paypal {width: 30%}
+            .w3-button {top: 65%}
+        }
+        
+    </style>
+</head>
+<body>
+<nav>
+   <img src="logo.jpg" alt="" class="logo">
+    <ul>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Blogs</a></li>
+        <li><a href="">Block Regions</a></li>
+        <li><a href="">Typography</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="index.html">Home</a></li>
+       
+    </ul>
+    <div class="hamburger">Menu &#9776;</div>
+</nav>
+<header>
+   <div class="slide">
+       <div class="kepre">
+       <h2>Contact us</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere euismod quam, sed ultrices turpis eleifend sagittis. Donec ornare porta felis, a luctus justo pulvinar nec.</p>
+       <button><a href="">Read more</a></button>
+    </div>
+   </div>
+   <div class="slide masodik">
+       <div class="kepre">
+       <h2>About</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere euismod quam, sed ultrices turpis eleifend sagittis. Donec ornare porta felis, a luctus justo pulvinar nec.</p>
+       <button><a href="">Read more</a></button>
+    </div>
+   </div>
+   <div class="slide harmadik">
+       <div class="kepre">
+       <h2>Typography</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere euismod quam, sed ultrices turpis eleifend sagittis. Donec ornare porta felis, a luctus justo pulvinar nec.</p>
+       <button><a href="">Read more</a></button>
+    </div>
+   </div>
+   <div class="slide negyedik">
+       <div class="kepre">
+       <h2>Blogs</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere euismod quam, sed ultrices turpis eleifend sagittis. Donec ornare porta felis, a luctus justo pulvinar nec.</p>
+       <button><a href="">Read more</a></button>
+    </div>
+   </div>
+   
+   <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+   
+   
+    <div class="preface">
+        <div><h3>Preface first</h3><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur massa eros, interdum in enim ac, commodo pellentesque nibh. Ut eget tempor nisl. Nam euismod iaculis ante, sed commodo velit pharetra ut. Sed sit amet urna quis dui dignissim auctor</p></div>
+        <div><h3>Preface middle</h3><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur massa eros, interdum in enim ac, commodo pellentesque nibh. Ut eget tempor nisl. Nam euismod iaculis ante, sed commodo velit pharetra ut. Sed sit amet urna quis dui dignissim auctor</p></div>
+        <div><h3>Preface last</h3><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur massa eros, interdum in enim ac, commodo pellentesque nibh. Ut eget tempor nisl. Nam euismod iaculis ante, sed commodo velit pharetra ut. Sed sit amet urna quis dui dignissim auctor</p></div>
+    </div>
+    
+</header>
+<main>
+    <div class="tartalom">
+       <article class="cikk">
+           <h2>Sample article</h2>
+           <h3>Posted on: ... By: ...</h3>
+           <img src="pexels-photo-1067191.jpeg" alt="">
+           <p>Mauris tristique aliquet turpis, a tincidunt lacus iaculis vitae. Proin in tortor in orci dictum ultricies. Donec commodo posuere tempus. Quisque vitae viverra orci, et lobortis lacus. Suspendisse porttitor placerat arcu id volutpat. Vivamus vel lorem non erat auctor ultricies. Pellentesque non neque ut orci mollis tincidunt pharetra vitae tortor. Fusce interdum, urna vitae ullamcorper consequat, felis ex venenatis nisi, quis dictum purus ipsum at justo. Aliquam erat volutpat.Ut volutpat tempor ultrices. Integer enim risus, pulvinar id vehicula ac, mattis ut nulla. Nunc et sollicitudin velit. Nunc dictum, est at pharetra aliquam, augue risus ornare mi, sit amet iaculis quam enim vitae lorem.</p><br>
+           Tags: <span>Lorem</span><span>Ipsum</span><br><br>
+           <button>Read more</button>
+           <button>3 comments</button>
+           <button>Log in</button> to post comments.
+       </article>
+       <article>
+           <h2>First blog</h2>
+           <h3>Posted on: ... By: ...</h3>
+           <p>Mauris tristique aliquet turpis, a tincidunt lacus iaculis vitae. Proin in tortor in orci dictum ultricies. Donec commodo posuere tempus. Quisque vitae viverra orci, et lobortis lacus. Suspendisse porttitor placerat arcu id volutpat. Vivamus vel lorem non erat auctor ultricies. Pellentesque non neque ut orci mollis tincidunt pharetra vitae tortor. Fusce interdum, urna vitae ullamcorper consequat, felis ex venenatis nisi, quis dictum purus ipsum at justo. Aliquam erat volutpat.Ut volutpat tempor ultrices. Integer enim risus, pulvinar id vehicula ac, mattis ut nulla. Nunc et sollicitudin velit. Nunc dictum, est at pharetra aliquam, augue risus ornare mi, sit amet iaculis quam enim vitae lorem.</p><br>
+           <button>Read more</button>
+           <button>admin's blog</button>
+       </article>
+       <article>
+           <h2>Second blog</h2>
+           <h3>Posted on: ... By: ...</h3>
+           <p>Mauris tristique aliquet turpis, a tincidunt lacus iaculis vitae. Proin in tortor in orci dictum ultricies. Donec commodo posuere tempus. Quisque vitae viverra orci, et lobortis lacus. Suspendisse porttitor placerat arcu id volutpat. Vivamus vel lorem non erat auctor ultricies. Pellentesque non neque ut orci mollis tincidunt pharetra vitae tortor. Fusce interdum, urna vitae ullamcorper consequat, felis ex venenatis nisi, quis dictum purus ipsum at justo. Aliquam erat volutpat.Ut volutpat tempor ultrices. Integer enim risus, pulvinar id vehicula ac, mattis ut nulla. Nunc et sollicitudin velit. Nunc dictum, est at pharetra aliquam, augue risus ornare mi, sit amet iaculis quam enim vitae lorem.</p><br>
+           <button>Read more</button>
+           <button>admin's blog</button>
+       </article>
+       <article>
+           <h2>Third blog</h2>
+           <h3>Posted on: ... By: ...</h3>
+           <p>Mauris tristique aliquet turpis, a tincidunt lacus iaculis vitae. Proin in tortor in orci dictum ultricies. Donec commodo posuere tempus. Quisque vitae viverra orci, et lobortis lacus. Suspendisse porttitor placerat arcu id volutpat. Vivamus vel lorem non erat auctor ultricies. Pellentesque non neque ut orci mollis tincidunt pharetra vitae tortor. Fusce interdum, urna vitae ullamcorper consequat, felis ex venenatis nisi, quis dictum purus ipsum at justo. Aliquam erat volutpat.Ut volutpat tempor ultrices. Integer enim risus, pulvinar id vehicula ac, mattis ut nulla. Nunc et sollicitudin velit. Nunc dictum, est at pharetra aliquam, augue risus ornare mi, sit amet iaculis quam enim vitae lorem.</p><br>
+           <button>Read more</button>
+           <button>admin's blog</button>
+       </article>
+        
+    </div>
+    
+    <aside>
+        <h2>Cash contribuition</h2>
+        <p>Please consider <span>Cash contribuition through Paypal</span> for our free Dripal Modules, Themes & Projects which helps us creating new and free quality drupal modules, themes and projects in the future.</p>
+        <button class="paypal"><img src="pay-now-button.png" alt=""></button><br>
+        <button>Download Drupal theme</button><br>
+        <button>Technosaran homepage</button>
+    </aside>
+</main>
+<footer>
+    <div class="bottom"><h3>First bottom</h3>
+    <p>Mauris tristique aliquet turpis, a tincidunt lacus iaculis vitae. Proin in tortor in orci dictum ultricies. Donec commodo posuere tempus. Quisque vitae viverra orci, et lobortis lacus.</p></div>
+    <div class="bottom"><h3>Second bottom</h3>
+    <p>Mauris tristique aliquet turpis, a tincidunt lacus iaculis vitae. Proin in tortor in orci dictum ultricies. Donec commodo posuere tempus. Quisque vitae viverra orci, et lobortis lacus.</p></div>
+    <div class="bottom"><h3>Third bottom</h3>
+    <p>Mauris tristique aliquet turpis, a tincidunt lacus iaculis vitae. Proin in tortor in orci dictum ultricies. Donec commodo posuere tempus. Quisque vitae viverra orci, et lobortis lacus.</p></div>
+    <div class="bottom"><h3>Fourth bottom</h3>
+    <p>Mauris tristique aliquet turpis, a tincidunt lacus iaculis vitae. Proin in tortor in orci dictum ultricies. Donec commodo posuere tempus. Quisque vitae viverra orci, et lobortis lacus.</p></div>
+</footer>
+<div class="lablec">
+    Copyright &#169; 2018, Nexus Theme by Szabina :)
+</div>
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("slide");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "flex"; 
+}
+    
+</script>
+
+</body>
+</html>
